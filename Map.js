@@ -6,12 +6,6 @@ export class Map extends React.Component {
         }
     }
 
-    loadMap() {
-        // ...
-    }
-
-    render() {
-        // ...
 
     componentDidMount() {
         this.loadMap();
