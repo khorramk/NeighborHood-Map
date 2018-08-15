@@ -1,44 +1,20 @@
-
+import * as info from './infoMapAPI';
+import * as ven from './getPlace';
 //make a app to pinpoint places to go to in makkah
+//this places array gets the all the id for markers
 
-const places = {
-    hotels: {
-        name: 'Park Inn by Radisson Makkah Al Naseem',
-        pictures: '/src/images/park-in.jpg',
-        lat: 21.3820994,
-        long: 39.87252509999996
+//getting the location of markers and names
+export const locationOfMarkers = ()=>{
+    //const newObj = info.locationofPlaces;
+     
+    
+    return info.locationofPlaces;
+}
+export const cvenue = ()=>{
+info.chosenVenue.forEach(element => {
+    ven.cplaces.push(element.name);
 
-    },
-
-    eatingPlace: {
-           name: 'pizza buffet',
-           pictures: '',
-        lat: 21.383138302284266,
-        long: 39.87037718296051
-    },
-
-    placesToGo: {
-            name: '',
-            pictures: '',
-            lat: '',
-            long: ''
-
-    },
-
-    transportstation: {
-        name: 'bus',
-        thumbnail: '',
-        lat: '',
-        long: ''
-    },
-
-    marketplace: {
-        name: 'esmat shopping centre',
-        pictures: '',
-        lat: '21.4033207',
-        long: '39.87596559999997'
-    }
+});
 
 }
 
-export default places
