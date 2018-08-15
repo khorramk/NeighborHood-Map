@@ -1,12 +1,12 @@
 # Arts and entertainment map
 This is my Own project making custom style Maps. the purpose is to show most popolar :circus_tent: entertainment places in London
 
-#motivation
+## motivation
 
 i wanted to create for user to navigate to current location provided in the map.
 
 
-#build satatus
+## build satatus
 
 this project was bootstrapped with react.
 in addition it has other dependencies:
@@ -16,18 +16,18 @@ in addition it has other dependencies:
 3. also used foursqaure API to get relevant information
 4. and mainly used mapbox to render the maps.
 
-#Code style
+## Code style
 
 in this project mainly used ES6 to implement the features however you can converted to ES5 and older just by going to Babel.js website.
 
-#screenshots
+## screenshots
 
-#Tech/framework used
+## Tech/framework used
 
 bulit with:
  react component
 
-#Code example
+## Code example
 
 ```
 class Map extends React.Component {
@@ -174,7 +174,7 @@ export default Map
 ```
 
 
-##Installation
+## Installation
 
 to run the app in you local machine:
 
@@ -191,26 +191,26 @@ npm start
 ```
 also make sure pick your favorite browser.
 
-##API Reference
+## API Reference
 
 to API used here 
 1. mapbox API
 2. foursquare API
 
-##Tests
+## Tests
 
 tests will be dsiplayed errors in your browser make sure you look at ther errors and got to the line number
 
-##how to use
+## how to use
 
 to use this projects or getting some code snippets. you are allowed to do so. provided your own API key and token
 
-##Contribute
+## Contribute
 
 if you think you can add additional features and add some functionality then do make pull request or we can discuss the problem your running. so we can overcome it collectively.
 
 
-##credits
+## credits
 
 1. udacity to make me a proper front end developer
 2. mapbox
@@ -218,8 +218,8 @@ if you think you can add additional features and add some functionality then do 
 4. uber documentation
 
 
-you may have to provide your api keys in variables in 
-```
+
+
 
 
  
