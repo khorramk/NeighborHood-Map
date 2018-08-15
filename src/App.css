@@ -13,3 +13,38 @@ html, body{
   cursor: pointer;
 }
 
+.title{
+  color: black;
+}
+
+
+
+  
+.search-Venue {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
+}
+.search-venue-input-wrapper {
+  flex: 1;
+  background: #e9e;
+}
+.search-Venue input {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+}
+
+.container{
+ display: grid !important;
+  grid-gap: 20px;
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 200px 400px;
+  grid-auto-flow: column;
+}
