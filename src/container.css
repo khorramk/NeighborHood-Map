@@ -1,0 +1,7 @@
+.container {
+  position: static;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 200px 400px; }

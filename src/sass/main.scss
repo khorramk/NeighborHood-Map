@@ -1,0 +1,25 @@
+$courier: Arial, Helvetica, sans-serif;
+$one: 1em;
+$back-color: black;
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    font-family: $courier;
+    font-size: $one;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.heading{
+    background-color: $back-color;
+}
+
+@media (min-width: 768px){
+    .header{
+        text-align: center;
+    }
+}

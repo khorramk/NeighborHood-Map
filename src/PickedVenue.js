@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './App.css';
 
 class PickedVenue extends Component{
    
@@ -9,7 +9,7 @@ class PickedVenue extends Component{
     
        return (
            <div>
-               <select
+               <select aria-label="choosevenue"  className="full-width"
                    
                    onChange={(e)=> {
                        let elem = null;

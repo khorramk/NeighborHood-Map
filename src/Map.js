@@ -1,20 +1,12 @@
 import React /*{ Component }*/ from 'react';
-import ReactMapGL, { Marker, FlyToInterpolator, LinearInterpolator, NavigationControl, Popup} from 'react-map-gl';
+import ReactMapGL, { Marker, FlyToInterpolator, NavigationControl, Popup} from 'react-map-gl';
 //import { StaticMap } from 'react-map-gl';
 //import { locationOfMarkers } from './util/placesAPI';
 import * as VenueAPI from './util/infoMapAPI';
-import 'mapbox-gl/dist/mapbox-gl.css'; 
-//import * as markers from './util/placesAPI';
-import './App.css';
-import {ZoomControl } from "react-mapbox-gl";
-//import ReactModal from 'react-modal';
-import SimpleModal from './InfoWindow';
-import InfoVenue from './InfoVenue';
 import CityInfo from './city-info';
 import CityPin from './city-pin';
-import {Link} from 'react-router-dom';
-import Select from 'react-select';
 import PickedVenue from './PickedVenue';
+import './App.css';
 
 
 let viewportwidth;
@@ -71,7 +63,9 @@ class Map extends React.Component {
     
             
     })
-  );
+  ).catch(()=>{
+    this.setState({loaded: false})
+  })
    
   
  }
@@ -135,31 +129,29 @@ class Map extends React.Component {
   }
 
   render() {
-    
+    let tab = this.state.loaded ? {}:{tabIndex: 0};
     return (
-      <div className="container">
-        
-           
-      {/*<div className="search-Venue">
-      
-          <div className="search-venue-input-wrapper">
-          
-          <input type="text" value={this.state.query} onChange={(event) => this.getQuery(event.target.value)} placeholder="Search by title or author" />
-
+      <div className="grid full-height full-width area" role="heading"  >
+        <div className="one full-width title-color put-center text-color">
+          <h1 className="header">art & gallary venues</h1>
+          <h2> zoom in to get started</h2>
         </div>
-    </div>*/}
-      <div className="map">
-      <ReactMapGL
+           
+    {   this.state.loaded === true ? 
+      (
+      <ReactMapGL {...tab} id="map" className="full-width two"
         {...this.state.viewport}
         onViewportChange={(viewport) => this.setState({viewport})
          
           // call `setState` and use the state to update the map.
         }
-
+       style={{
+        width: '100%', height: '100%' }}
         transitionDuration={1000}
         transitionInterpolator={new FlyToInterpolator()}
      //put you own mapbox token below
-        mapboxApiAccessToken={''}
+            mapboxApiAccessToken={'pk.eyJ1Ijoia2hvcnJhbSIsImEiOiJjamsyZXQyeWQwcGJwM2ptdDhndnNxZ3dsIn0.cAdkhMm3Xg9_3b2obaokMA'}
+            tabIndex="-1"
       >
       
     
@@ -169,19 +161,29 @@ class Map extends React.Component {
             {this._renderPopup()}
             {
               this.state.loaded === true ?
-                (<PickedVenue choosingvenue={this._choosingvenue} venue={VenueAPI.locationofPlaces} />) : (<div>loading</div>)
+                (
+                
+                <PickedVenue className="abs-pos top full-width" choosingvenue={this._choosingvenue} venue={VenueAPI.locationofPlaces} />
+                
+                ) : (<div>loading</div>)
 
             }
             {this._renderVenue()}
     
     
       
-        <div style={{ position: 'absolute', right: 0 }}>
+        <div style={{ position: 'fixed', left: 0 }}>
           <NavigationControl onViewportChange={(viewport) => this.setState({ viewport })} />
         </div>
        
       </ReactMapGL>
-      </div>
+      
+      ) : (<div tabIndex="0">
+      
+      <h1>oh no! limit is reached or need to put client details</h1>
+      <h2>contact the developer of this page for more details</h2>
+        <h3>email: khorramk.kbsk@gmail.com</h3>
+      </div>)}
       
       </div>
     )

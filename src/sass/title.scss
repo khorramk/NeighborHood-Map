@@ -1,0 +1,19 @@
+
+.title-color{
+    background-color: azure;
+}
+
+.put-center{
+    text-align: center;
+
+}
+
+.text-color{
+    color: #150f09;
+}
+
+@media (min-width: 768px){
+    .put-center{
+        text-align: center;
+    }
+}

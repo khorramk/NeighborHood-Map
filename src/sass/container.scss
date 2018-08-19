@@ -1,0 +1,27 @@
+
+
+//content size
+$h: 100%;
+$w: 100%;
+
+//content position and layout
+$cont-pos: static;
+//
+
+//no need for visual for container
+
+
+
+@function col($c) {
+    @return $c repeat(5, 1fr);  
+}
+
+ .container{
+     position: $cont-pos;
+     height: $h;
+     width: $w;
+     display: grid;
+     grid-gap: 20px;
+     grid-template-rows: 200px 400px;
+
+ }

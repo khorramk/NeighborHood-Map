@@ -1,0 +1,24 @@
+$display: grid;
+//grid coloumns
+//set it to 
+$num-size: 200px repeat(5, 1fr);
+$gap: 20px;
+$placed-item: span 2/ 5;
+//map content
+.map-content{
+    width: 100%;
+    height: 100%;
+    display: $display;
+    grid-template-rows: $num-size;
+}
+//actual map
+.map{
+    background: mediumaquamarine;
+    grid-row: $placed-item;
+    display: $display;
+    grid-template-columns: $num-size;
+}
+
+.map-items{
+    grid-column: $placed-item;
+}
