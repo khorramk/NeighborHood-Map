@@ -150,7 +150,7 @@ class Map extends React.Component {
         transitionDuration={1000}
         transitionInterpolator={new FlyToInterpolator()}
      //put you own mapbox token below
-            mapboxApiAccessToken={'pk.eyJ1Ijoia2hvcnJhbSIsImEiOiJjamsyZXQyeWQwcGJwM2ptdDhndnNxZ3dsIn0.cAdkhMm3Xg9_3b2obaokMA'}
+            mapboxApiAccessToken={' '}
             tabIndex="-1"
       >
       
