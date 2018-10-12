@@ -3,6 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyCQRJUhhb9KVOMaijkKuzdzWa-HUbCzh4c",
+          authDomain: "art-and-gallery-project.firebaseapp.com",
+          databaseURL: "https://art-and-gallery-project.firebaseio.com",
+          projectId: "art-and-gallery-project",
+          storageBucket: "",
+          messagingSenderId: "175478514359"
+        };
+        firebase.initializeApp(config);
+      </script>
     <meta name="theme-color" content="#000000">
     <!--
       manifest.json provides metadata used when your web app is added to the
@@ -11,19 +24,7 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCQRJUhhb9KVOMaijkKuzdzWa-HUbCzh4c",
-        authDomain: "art-and-gallery-project.firebaseapp.com",
-        databaseURL: "https://art-and-gallery-project.firebaseio.com",
-        projectId: "art-and-gallery-project",
-        storageBucket: "",
-        messagingSenderId: "175478514359"
-      };
-      firebase.initializeApp(config);
-    </script>
+  
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
