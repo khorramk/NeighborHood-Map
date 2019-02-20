@@ -129,7 +129,7 @@ class Map extends React.Component {
   }
 
   render() {
-    let tab = this.state.loaded ? {}:{tabIndex: 0};
+    let tab = this.state.loaded ? { tabIndex: 0 }: {};
     return (
       <div className="grid full-height full-width area" role="heading"  >
         <div className="one full-width title-color put-center text-color">
@@ -139,18 +139,20 @@ class Map extends React.Component {
            
     {   this.state.loaded === true ? 
       (
-      <ReactMapGL {...tab} id="map" className="full-width two"
+      <ReactMapGL {...tab}  id="map" className="full-width two"
         {...this.state.viewport}
         onViewportChange={(viewport) => this.setState({viewport})
          
           // call `setState` and use the state to update the map.
         }
        style={{
-        width: '100%', height: '100%' }}
+        width: viewportwidth, height: viewportheight }}
+
+        
         transitionDuration={1000}
         transitionInterpolator={new FlyToInterpolator()}
      //put you own mapbox token below
-            mapboxApiAccessToken={' '}
+              mapboxApiAccessToken={'pk.eyJ1Ijoia2hvcnJhbSIsImEiOiJjamsyZXQyeWQwcGJwM2ptdDhndnNxZ3dsIn0.cAdkhMm3Xg9_3b2obaokMA'}
             tabIndex="-1"
       >
       

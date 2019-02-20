@@ -3,7 +3,9 @@ This is my Own project making custom style Maps. the purpose is to show most pop
 
 ## motivation
 
-i wanted to create for user to navigate to current location provided in the map.
+i wanted to create and test for user to navigate to a list of option provided in the map.
+
+i like geocanvas drawing specially in programming.
 
 
 ## build satatus
@@ -18,7 +20,7 @@ in addition it has other dependencies:
 
 ## Code style
 
-in this project mainly used ES6 to implement the features however you can converted to ES5 and older just by going to Babel.js website.
+in this project i mainly used ES6 to implement the features however you can converted to ES5 and older just by going to Babel.js website.
 
 ## screenshots
 

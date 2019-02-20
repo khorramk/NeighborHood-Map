@@ -3,8 +3,8 @@ import * as venu from './placesAPI';
 
 //please put your own client_id if your running from your own local machine
 //also client secret
-const client_id = '';
-const client_secret = '';
+const client_id = 'IM0XRFNGSRVBD041MN5ZOI5DOEPCSNRUKKWNDW3OORI2BGCG';
+const client_secret = 'XKNDKE2EZFMO5QL10WJGYDIRJFH2FY0W3O1C1AR5TSHWSSPE';
 //chossing london by defualt
 const lat = 51.5074;
 const long = 0.1278;

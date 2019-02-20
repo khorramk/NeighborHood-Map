@@ -21,5 +21,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 _config.yml
+.firebaserc
+.netlify
+database.rules.json
+firebase.json
+gulpfile.js
+package-lock.json
+storage.rules
+yarn.lock
+/public/
+/n
+/.firebase
 
 
