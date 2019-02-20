@@ -7,6 +7,8 @@ import CityInfo from './city-info';
 import CityPin from './city-pin';
 import PickedVenue from './PickedVenue';
 import './App.css';
+import 'bootstrap';
+import 'react-bootstrap';
 
 
 let viewportwidth;

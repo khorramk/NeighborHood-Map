@@ -7,12 +7,12 @@ import firebase from 'firebase';
 import registerServiceWorker from './registerServiceWorker';
 
 var config = {
-    apiKey: "AIzaSyCQRJUhhb9KVOMaijkKuzdzWa-HUbCzh4c",
+    apiKey: "",
     authDomain: "art-and-gallery-project.firebaseapp.com",
     databaseURL: "https://art-and-gallery-project.firebaseio.com",
     projectId: "art-and-gallery-project",
     storageBucket: "art-and-gallery-project.appspot.com",
-    messagingSenderId: "175478514359"
+    messagingSenderId: ""
 };
 
 firebase.initializeApp(config);

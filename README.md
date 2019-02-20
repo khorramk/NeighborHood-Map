@@ -3,9 +3,9 @@ This is my Own project making custom style Maps. the purpose is to show most pop
 
 ## motivation
 
-i wanted to create and test for user to navigate to a list of option provided in the map.
+I wanted to create and test for user to navigate to a list of option provided in the map.
 
-i like geocanvas drawing specially in programming.
+I like geocanvas drawing specially in programming.
 
 
 ## build satatus

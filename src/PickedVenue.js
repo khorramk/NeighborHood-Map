@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
+import 'bootstrap';
+import 'react-bootstrap';
 
 class PickedVenue extends Component{
    
